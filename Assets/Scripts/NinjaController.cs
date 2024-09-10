@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class NinjaController : MonoBehaviour
 {
@@ -27,13 +28,13 @@ public class NinjaController : MonoBehaviour
     public float kitaJ;
     public float saltoDoble;
 
-   
+   PhotonView view;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
 
-        
+        view = GetComponent<PhotonView>();
 
 
         kita = moveSpeed;
@@ -48,20 +49,25 @@ public class NinjaController : MonoBehaviour
 
     void Update()
     {
-        Move();
-        Jump();
-        Crouch();
-        CheckHoldingWeapon();
-        WallSlide();
 
-        if (isTouchingWall &&  Input.GetKey(KeyCode.A))
+        if (view.IsMine)
         {
-            jumpForce = saltoDoble;
+            Move();
+            Jump();
+            Crouch();
+            CheckHoldingWeapon();
+            WallSlide();
+
+            if (isTouchingWall && Input.GetKey(KeyCode.A))
+            {
+                jumpForce = saltoDoble;
+            }
+            else
+            {
+                jumpForce = kitaJ;
+            }
         }
-        else
-        {
-            jumpForce = kitaJ;
-        }
+        
     }
 
     void Move()
