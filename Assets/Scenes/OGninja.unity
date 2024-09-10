@@ -235,8 +235,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 5377571189214954285, guid: ae958bc511c1b0b4ca95cd20efcfdc3e, type: 3}
+  playerPrefab2: {fileID: 7247771931721103949, guid: 92d3a88ea70eaa24abf2056fc1334944, type: 3}
   ninja1: {fileID: 5377571189214954286, guid: ae958bc511c1b0b4ca95cd20efcfdc3e, type: 3}
-  ninja2: {fileID: 0}
+  ninja2: {fileID: 7247771931721103936, guid: 92d3a88ea70eaa24abf2056fc1334944, type: 3}
 --- !u!4 &774122673
 Transform:
   m_ObjectHideFlags: 0
