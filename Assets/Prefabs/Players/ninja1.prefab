@@ -195,11 +195,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  jumpForce: 3
+  jumpForce: 7
   move: 0
   movey: 0
   rb: {fileID: 0}
-  anim: {fileID: 0}
+  anim: {fileID: 5377571189214954277}
   agachar: {fileID: 5377571189214954274}
   parado: {fileID: 5377571189214954273}
   pared: {fileID: 5377571189214954285}

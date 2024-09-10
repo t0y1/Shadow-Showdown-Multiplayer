@@ -194,11 +194,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eef9270c47adff4bb69945f09dd398e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
-  jumpForce: 0
+  moveSpeed: 5
+  jumpForce: 7
   move: 0
   movey: 0
-  anim: {fileID: 0}
+  anim: {fileID: 7247771931721103941}
   parar: {fileID: 7247771931721103937}
   agachar: {fileID: 7247771931721103940}
   pared: {fileID: 7247771931721103949}
