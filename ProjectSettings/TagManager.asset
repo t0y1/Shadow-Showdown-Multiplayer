@@ -7,6 +7,9 @@ TagManager:
   - player1
   - Wall
   - Ground
+  - Dead
+  - player2
+  - Weapon
   layers:
   - Default
   - TransparentFX
